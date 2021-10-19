@@ -10,7 +10,6 @@
         assets.addJs('/js/owl.carousel.js');
     </isscript>
 
-
     <main>
         <!-- .site-banner -->
         <isslot id="home-banner-m" description="Home page banner." context="global" />
