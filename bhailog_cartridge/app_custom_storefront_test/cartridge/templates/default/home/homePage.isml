@@ -22,7 +22,7 @@
   </ul>
 
   <!-- The slideshow -->
-  <h1>hii</h1>
+
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="la.jpg" alt="Los Angeles">
