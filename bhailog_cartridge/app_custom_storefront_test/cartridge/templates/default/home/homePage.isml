@@ -1,0 +1,81 @@
+<h1>HELLO WORLD</h1>
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/homePage.css');
+    </isscript>
+
+    <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
+    <div class="home-main homepage">
+        <isslot id="home-main-m" description="Main home page slot." context="global" />
+ 
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <h1>hii</h1>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+
+    <div class="container home-categories homepage">
+        <div class="row home-main-categories no-gutters">
+            <isslot id="home-categories-m" description="Categories slots on the home page." context="global" />
+        </div>
+    </div>
+
+    <div class="container home-product-tiles homepage">
+        <div class="hp-product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
+            <isslot id="home-products-m" description="Product tiles on the home page." context="global" />
+        </div>
+    </div>
+
+    <div class="homepage shop-the-style">
+        <isslot id="home-product-set-m" description="Link to a Product Set." context="global" />
+    </div>
+    <div class="home-email-signup">
+        <div class="container">
+            <form role="form">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="hpEmailSignUp" placeholder="${Resource.msg('placeholdertext.form.emailsignup', 'homePage', null)}" aria-label="${Resource.msg('placeholdertext.form.emailsignup', 'homePage', null)}">
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-primary subscribe-email" data-href="${URLUtils.url('EmailSubscribe-Subscribe')}">${Resource.msg('button.form.emailsignup', 'homePage', null)} </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 email-description">${Resource.msg('description.form.emailsignup', 'homePage', null)}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</isdecorate>
