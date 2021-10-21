@@ -1,4 +1,4 @@
-<h1>HELLO WORLD</h1>
+
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
